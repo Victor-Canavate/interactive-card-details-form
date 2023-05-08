@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root {
+
+    /*Primary*/
+    /* --linearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%) */
+    --redInputError: hsl(0, 100%, 66%);
+
+    /*Neutral*/
+    --white: hsl(0, 0%, 100%);
+    --lightGrayishViolet: hsl(270, 3%, 87%);
+    --darkGrayishViolet: hsl(279, 6%, 55%);
+    --veryDarkViolet: hsl(278, 68%, 11%);
+
+    --fontSize: 18px;
+    --fontFamily: 'Space Grotesk', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    margin: 0;
+}
+
+body {
+    background-image: url(../images/bg-main-mobile.png);
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--white);
+    margin: 40vh 0  auto;
+    width: 100vw;
+}
+
+#front-card {
+    position: absolute;
+    top: 150px;
+    width: 270px;
+    left: 10px;
+    height: 160px;
+    width: 290px;
+}
+
+#card-number {
+    position: absolute;
+    color: var(--lightGrayishViolet);
+    top: 230px;
+    left: 35px;
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+#card-owner {
+    color: var(--lightGrayishViolet);
+    position: absolute;
+    left: 35px;
+    font-size: 12px;
+    top: 275px
+}
+
+#card-date {
+    position: absolute;
+    color: var(--lightGrayishViolet);
+    left: 235px;
+    font-size: 12px;
+    top: 275px
+}
+
+#logo-card {
+    position: absolute;
+    top: 160px;
+    width: 100px;
+    left: 20px;
+}
+
+#back-card {
+    position: absolute;
+    top: 50px;
+    width: 270px;
+    right: 10px;
+}
+
+#back-card--cvc {
+    position: absolute;
+    color: var(--lightGrayishViolet);
+    left: 245px;
+    top: 110px
+}
+
+.register {
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+.form-element {
+    margin-bottom: 21px
+}
+
+.form-element--label {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.form-element--input {
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--lightGrayishViolet);
+}
+
+.form-element--input::placeholder {
+    padding: 7px
+}
+
+.form-element--inputs {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-element--cvc {
+    display: flex;
+    flex-direction: column;
+}
+
+.cvc-input {
+    width: 100px
+}
+
+.form-element--expdate {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.form-elements--expdate--inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.expdate-input {
+    width: 70px;
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#submit-button {
+    background-color: var(--veryDarkViolet);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 285px;
+    border-radius: 10px;
+}
+
+.invisible {
+    display: none;
+}

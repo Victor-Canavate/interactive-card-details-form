@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive-card-details-form</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <main>
+        <img id="back-card" src="./assets/images/bg-card-back.png">
+        <span id="back-card--cvc">000</span>
+        <img id="front-card" src="./assets/images/bg-card-front.png">
+        <span id=card-number>0000 0000 0000 0000</span>
+        <span id="card-owner">Jane Appleseed</span>
+        <span id="card-date">00/00</span>
+        <svg id="logo-card" xmlns="http://www.w3.org/2000/svg" width="84" height="47" fill="none"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+        <section class="register">
+            <form>
+                <div class="form-element">
+                    <label class="form-element--label cardholder-label" for="cardholder-name">cardholder name</label>
+                    <input class="form-element--input cardholder-input" type="text" name="cardholder-name" placeholder="e.g. Jane Appleseed">
+                </div>
+
+                <div class="form-element">
+                    <label class="form-element--label cardnumber-label" for="card-number">card number</label>
+                    <input class="form-element--input cardnumber-input" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
+                </div>
+
+                <div class="form-element form-element--inputs">
+
+                    <div class="form-element--expdate">
+                        <label class="form-element--label expdate-label" for="expdate">exp. date (mm/yy)</label>
+                        <div class="form-element--expdate---inputs">
+                            <input class="form-element--input expdate-input" type="text" name="expdate" placeholder="MM">
+                            <input class="form-element--input expdate-input" type="text" name="expdate" placeholder="YY">
+                        </div>
+                    </div>
+                    
+                    <div class="form-element--cvc">
+                            <label class="form-element--label cvc-label" for="cvc">cvc</label>
+                            <input class="form-element--input cvc-input" type="text" name="cvc" placeholder="e.g. 123">
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <button id="submit-button">Confirm</button>
+                </div>
+                
+            </form>
+        </section>
+        
+        <section class="register-sucess invisible">
+            <h2>thank you!</h2>
+            <h3>We've added your card details</h3>
+
+            <button id="button-continue">Continue</button>
+        </section>
+    </main>
+</body>
+</html>
