@@ -9,3 +9,7 @@ Os arquivos são referentes a um desafio proposto no site
 > frontendmentor.io
 
 Todos os desafios são baseados em situações cotidianas de um desenvolvedor Front-End, ou seja, o código se baseia em HTML, CSS e Javascript.
+
+## Aviso
+
+Alguns projetos podem não apresentar total responsividade por conta da limitação de widths que o layout em questão recebe.
