@@ -1,0 +1,25 @@
+@media screen and (width: 1440px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .register {
+        display: flex;
+        width: 100vw;
+        padding: 0;
+        margin-top: 20vh;
+        justify-content: center;
+    }
+
+    .form-element {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-element--inputs {
+        display: flex;
+        flex-direction: row;
+    }
+}

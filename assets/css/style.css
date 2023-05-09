@@ -44,12 +44,13 @@ main {
     left: 10px;
     height: 160px;
     width: 290px;
+    border-radius: 10px;
 }
 
 #card-number {
     position: absolute;
     color: var(--lightGrayishViolet);
-    top: 230px;
+    top: 235px;
     left: 35px;
     font-size: 21px;
     font-weight: lighter;
@@ -93,7 +94,7 @@ main {
 }
 
 .register {
-    margin-top: 10vh;
+    margin-top: 12vh;
     margin-left: 5vw;
 }
 
@@ -114,7 +115,8 @@ main {
 }
 
 .form-element--input::placeholder {
-    padding: 7px
+    padding: 7px;
+    color: var(--lightGrayishViolet);
 }
 
 .form-element--inputs {
@@ -153,6 +155,36 @@ main {
 }
 
 #submit-button {
+    background-color: var(--veryDarkViolet);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 285px;
+    border-radius: 10px;
+}
+
+.register-sucess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.register-sucess h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 4vh;
+    font-size: 20px;
+}
+
+.register-sucess h3 {
+    color: var(--lightGrayishViolet);
+    font-weight: bolder;
+    margin-bottom: 4vh;
+}
+
+#button-continue {
     background-color: var(--veryDarkViolet);
     color: white;
     border: none;
