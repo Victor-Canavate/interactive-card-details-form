@@ -2,7 +2,50 @@
     main {
         display: flex;
         flex-direction: row;
-        margin: 0;
+        margin: 0px
+    }
+
+    .register {
+        margin-left: 20vw;
+    }
+
+    #front-card {
+        left: 270px;
+        height: 225px;
+        width: 410px
+    }
+
+    #logo-card {
+        left: 300px;
+        top: 175px;
+    }
+
+    #card-number {
+        left: 300px;
+        top: 270px;
+        font-size: 30px;
+    }
+
+    #card-owner {
+        left: 300px;
+        top: 320px;
+    }
+
+    #card-date {
+        left: 600px;
+        top: 320px;
+    }
+
+    #back-card {
+        left: 350px;
+        height: 225px;
+        width: 410px;
+        top: 390px;
+    }
+
+    #back-card--cvc {
+        top: 490px;
+        left: 680px;
     }
 
     .register {
@@ -21,5 +64,28 @@
     .form-element--inputs {
         display: flex;
         flex-direction: row;
+    }
+
+    .form-element--label {
+        font-size: 18px;
+    }
+
+
+    .cardnumber-input, .cardholder-input {
+        width: 380px;
+        padding: 12px 15px;
+        border-radius: 10px;
+    }
+
+    .expdate-input {
+        width: 100px;
+    }
+
+    .cvc-input {
+        width: 158px;
+    }
+
+    #submit-button {
+        width: 389px;
     }
 }
