@@ -31,6 +31,10 @@ body {
     height: 100vh;
 }
 
+#bg-desktop {
+    display: none;
+}
+
 main {
     background-color: var(--white);
     margin: 40vh 0  auto;
@@ -93,6 +97,12 @@ main {
     top: 110px
 }
 
+
+
+
+
+/* FORM SECTION */
+
 .register {
     margin-top: 12vh;
     margin-left: 5vw;
@@ -124,15 +134,6 @@ main {
     flex-direction: row;
 }
 
-.form-element--cvc {
-    display: flex;
-    flex-direction: column;
-}
-
-.cvc-input {
-    width: 100px
-}
-
 .form-element--expdate {
     display: flex;
     flex-direction: column;
@@ -147,6 +148,24 @@ main {
 
 .expdate-input {
     width: 70px;
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border: 1px solid var(--lightGrayishViolet);
+}
+
+.expdate-input::placeholder {
+    padding: 7px;
+    color: var(--lightGrayishViolet);
+}
+
+.form-element--cvc {
+    display: flex;
+    flex-direction: column;
+}
+
+.cvc-input {
+    width: 100px
 }
 
 .submit {
@@ -162,6 +181,13 @@ main {
     width: 285px;
     border-radius: 10px;
 }
+
+
+
+
+
+
+/* REGISTER SUCESS SECTION */
 
 .register-sucess {
     display: flex;
@@ -191,6 +217,24 @@ main {
     padding: 15px;
     width: 285px;
     border-radius: 10px;
+}
+
+
+
+
+
+/* ERROR SECTION */
+
+.error-message {
+    display: none;
+    color: var(--redInputError);
+    font-size: 10px;
+}
+
+.error-format {
+    display: none;
+    color: var(--redInputError);
+    font-size: 10px;
 }
 
 .invisible {

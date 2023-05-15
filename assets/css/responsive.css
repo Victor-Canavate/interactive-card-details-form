@@ -1,4 +1,8 @@
 @media screen and (width: 1440px) {
+    #bg-desktop {
+        display: flex
+    }
+
     main {
         display: flex;
         flex-direction: row;
@@ -90,6 +94,28 @@
         position: absolute;
         left: 900px;
         top: 190px
+    }
+
+    .error-message {
+        color: var(--redInputError);
+        font-size: 18px;
+    }
+
+    .error-message--expdate {
+        display: none;
+        color: var(--redInputError);
+        font-size: 18px;
+    }
+
+    .error-format--expdate {
+        display: none;
+        color: var(--redInputError);
+        font-size: 18px;
+    }
+    
+    .error-format {
+        display: none;
+        color: var(--redInputError);
     }
 
     .invisible {
