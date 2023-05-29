@@ -20,18 +20,18 @@
         top: 175px;
     }
 
-    #card-number {
+    .front-card--number {
         left: 300px;
         top: 270px;
         font-size: 30px;
     }
 
-    #card-owner {
+    .front-card--owner {
         left: 300px;
-        top: 320px;
+        top: 329px;
     }
 
-    #card-date {
+    .front-card--date {
         left: 600px;
         top: 320px;
     }
@@ -43,7 +43,7 @@
         top: 390px;
     }
 
-    #back-card--cvc {
+    .back-card--cvc {
         top: 490px;
         left: 680px;
     }
@@ -90,7 +90,7 @@
         width: 389px;
     }
 
-    .register-sucess {
+    .register-success {
         position: absolute;
         left: 900px;
         top: 190px
@@ -116,6 +116,7 @@
     .error-format {
         display: none;
         color: var(--redInputError);
+        font-size: 18px;
     }
 
     .invisible {

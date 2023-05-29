@@ -12,24 +12,24 @@
     <main>
         <img id="bg-desktop" src="./assets/images/bg-main-desktop.png">
         <img id="back-card" src="./assets/images/bg-card-back.png">
-        <span id="back-card--cvc">000</span>
+        <span class="back-card--cvc cvc">000</span>
         <img id="front-card" src="./assets/images/bg-card-front.png">
-        <span id=card-number>0000 0000 0000 0000</span>
-        <span id="card-owner">Jane Appleseed</span>
-        <span id="card-date">00/00</span>
+        <span class="front-card--number cardnumber">0000 0000 0000 0000</span>
+        <span class="front-card--owner cardholder">Jane Appleseed</span>
+        <span class="front-card--date expdate"><span class="card-date--mm">00</span>/<span class="card-date--yy">00</span></span>
         <svg id="logo-card" xmlns="http://www.w3.org/2000/svg" width="84" height="47" fill="none"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
         <section class="register">
             <form id="form">
-                <div class="form-element">
+                <div class="form-element form-section">
                     <label class="form-element--label cardholder-label" for="cardholder-name">cardholder name</label>
-                    <input class="form-element--input cardholder-input" type="text" name="cardholder-name" placeholder="e.g. Jane Appleseed">
+                    <input class="form-element--input cardholder cardholder-input input" type="text" name="cardholder-name" placeholder="e.g. Jane Appleseed">
                     <span class="error-message invisible">Can't be blank</span>
-                    <span class="error-format error-format--cardholder">Wrong format, numbers only</span>
+                    <span class="error-format error-format--cardholder">Wrong format, letters only</span>
                 </div>
 
-                <div class="form-element">
+                <div class="form-element form-section">
                     <label class="form-element--label cardnumber-label" for="card-number">card number</label>
-                    <input class="form-element--input cardnumber-input" type="text" name="card-number" placeholder="e.g. 1234 5678 9123 0000">
+                    <input class="form-element--input cardnumber cardnumber-input input" type="text" name="card-number" minlength="16" maxlength="16" placeholder="e.g. 1234 5678 9123 0000">
                     <span class="error-message invisible">Can't be blank</span>
                     <span class="error-format error-format--cardnumber">Wrong format, numbers only</span>
                 </div>
@@ -39,18 +39,18 @@
                     <div class="form-element--expdate">
                         <label class="form-element--label expdate-label" for="expdate">exp. date (mm/yy)</label>
                         <div class="form-element--expdate---inputs">
-                            <input class="expdate-input" type="text" name="expdate" placeholder="MM">
-                            <input class="expdate-input" type="text" name="expdate" placeholder="YY">
+                            <input class="expdate-input card-date--mm" type="text" name="expdate" minlength="2" maxlength="2" placeholder="MM">
+                            <input class="expdate-input card-date--yy" type="text" name="expdate" minlength="2" maxlength="2" placeholder="YY">
                         </div>
                         <span class="error-message--expdate invisible">Can't be blank</span>
                         <span class="error-format error-format--expdate">Wrong format, numbers only</span>
                     </div>
                     
-                    <div class="form-element--cvc">
+                    <div class="form-element--cvc form-section">
                             <label class="form-element--label cvc-label" for="cvc">cvc</label>
-                            <input class="form-element--input cvc-input" type="text" name="cvc" placeholder="e.g. 123">
+                            <input class="form-element--input cvc cvc-input input" type="text" name="cvc" minlength="3" maxlength="3" placeholder="e.g. 123">
                             <span class="error-message invisible">Can't be blank</span>
-                            <span class="error-format error-format--cvc">Wrong format, numbers only</span>
+                            <span class="error-format error-format--cvc">Numbers only</span>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@
             </form>
         </section>
         
-        <section class="register-sucess invisible">
+        <section class="register-success">
             <img src="./assets/images/icon-complete.svg">
             <h2>thank you!</h2>
             <h3>We've added your card details</h3>

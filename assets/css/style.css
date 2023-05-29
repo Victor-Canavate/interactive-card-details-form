@@ -51,7 +51,7 @@ main {
     border-radius: 10px;
 }
 
-#card-number {
+.front-card--number {
     position: absolute;
     color: var(--lightGrayishViolet);
     top: 235px;
@@ -60,15 +60,16 @@ main {
     font-weight: lighter;
 }
 
-#card-owner {
+.front-card--owner {
     color: var(--lightGrayishViolet);
     position: absolute;
     left: 35px;
     font-size: 12px;
-    top: 275px
+    top: 275px;
+    text-transform: uppercase;
 }
 
-#card-date {
+.front-card--date {
     position: absolute;
     color: var(--lightGrayishViolet);
     left: 235px;
@@ -90,7 +91,7 @@ main {
     right: 10px;
 }
 
-#back-card--cvc {
+.back-card--cvc {
     position: absolute;
     color: var(--lightGrayishViolet);
     left: 245px;
@@ -106,6 +107,7 @@ main {
 .register {
     margin-top: 12vh;
     margin-left: 5vw;
+    margin-bottom: 5vh;
 }
 
 .form-element {
@@ -127,6 +129,11 @@ main {
 .form-element--input::placeholder {
     padding: 7px;
     color: var(--lightGrayishViolet);
+}
+
+.form-element--input:focus, .expdate-input:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
 }
 
 .form-element--inputs {
@@ -189,22 +196,22 @@ main {
 
 /* REGISTER SUCESS SECTION */
 
-.register-sucess {
-    display: flex;
+.register-success {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
 }
 
-.register-sucess h2 {
+.register-success h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-top: 4vh;
     font-size: 20px;
 }
 
-.register-sucess h3 {
+.register-success h3 {
     color: var(--lightGrayishViolet);
     font-weight: bolder;
     margin-bottom: 4vh;
@@ -227,6 +234,11 @@ main {
 
 .error-message {
     display: none;
+    color: var(--redInputError);
+    font-size: 10px;
+}
+
+.error-message--expdate {
     color: var(--redInputError);
     font-size: 10px;
 }
